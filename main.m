@@ -26,15 +26,6 @@ Episode_Length= 50 ; maze_size = [5,5] ; km=3; weight_estimation_flag = 1;
 var_L = 0.1; var_A = [0.1,0.4,1] ; w = 1; 
 w_opt = (var_A+var_L)./(var_A+Num_of_Agents*var_L) ; % Optimal value of w.
 
-% DELETE THESE
-noise_type = 'gaussian' ; 
-maze_type = 1 ;
- rand_a_flag = 0 ;
- noise_var = 0 ;
- est_type = 'mean' ;
- m=0 ;
-%
-
 % Initializing vectors for saving results. 
 R_mean_est = zeros(Num_of_Agents,Episodes,length(var_A)) ; % mean accumulated reward for the estimated case
 R_std_est =  zeros(Num_of_Agents,Episodes,length(var_A)) ; % Standard deviation
